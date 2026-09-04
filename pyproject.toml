@@ -1,0 +1,28 @@
+[project]
+name = "aqi-predicationmodel"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mayurwabale9", email = "mayurwabale52@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "autogluon-tabular>=1.6.1",
+    "flaml[automl]>=2.6.0",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "mlflow>=3.15.2",
+    "numpy>=2.5.2",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+aqi-predicationmodel = "aqi_predicationmodel:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
